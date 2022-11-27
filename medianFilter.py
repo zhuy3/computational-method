@@ -1,7 +1,17 @@
 import numpy as np
 import scipy
-from scipy import signal
+import time
 
+from scipy import signal
+from scipy.io import wavfile
+from tqdm import trange
+from time import sleep
+
+for i in list(trange((20)):
+    sleep(0.5)
+    print(i)
+
+    samplerate, data = wavfile.read('degraded.wav')
 
 def get_median(data, filter_len):
 
